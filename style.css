@@ -1,0 +1,45 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*HEADER*/
+.header {
+    display: flex;
+    flex-direction: column;
+    padding:8px;
+}
+
+.logo {
+    padding:0;
+    margin:0;
+}
+
+ul {
+    display: flex;
+    padding:8px;
+    gap:12px;
+    margin-left:auto; 
+}
+
+li {
+    list-style-type: none;
+}
+
+/*FOOTER*/
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    color: #e5e7eb;
+    font-size: 18px;
+    height: 80px;
+    margin-top: auto;
+}
