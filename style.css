@@ -45,7 +45,7 @@ li {
 
 .intro {
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: #1f2937;
     padding: 0 200px 100px 200px;
 }
@@ -78,6 +78,12 @@ button {
     margin-bottom:12px;
 }
 
+.intro-image {
+    height:300px;
+    width:300px;
+    margin:auto;
+}
+
 /*INFOS*/
 
 h2 {
@@ -93,19 +99,31 @@ h2 {
     display:flex;
     justify-content: center;
     align-items: center;
-    gap:16px;
+    gap:32px;
     padding: 0 200px 100px 200px;
+    flex-shrink: 0;
 }
 
-.img {
-    border: 2px solid #3882F6;
-    border-radius: 8px;
+.one, .two, .three, .four {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 200px;
 }
 
 .text {
     text-align: center;
     color: #1f2937;
     font-size: 18px;
+}
+
+img {
+    border: 4px solid #3882F6;
+    border-radius: 8px;
+    width: 200;
+    height: 200px;
+    margin-bottom: 8px;
 }
 
 /*QUOTE*/
@@ -142,6 +160,7 @@ p {
     color:#e5e7eb;
     margin: 100px 200px 100px 200px;
     padding: 10px 50px 10px 50px;
+    border-radius: 8px;
 }
 
 .left {
@@ -155,6 +174,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
     border: 2px solid #e5e7eb; 
     border-radius: 8px;
     padding: 10px 50px 10px 50px;
